@@ -8,7 +8,7 @@ import { FilterStatus } from "@/types/FilterStatus"
 
 type ItemData = {
     status: FilterStatus
-    descrition: string
+    description: string
 }
 
 type Props = {
@@ -25,7 +25,7 @@ export function Item({ data, onStatus, onRemove }: Props) {
             </TouchableOpacity>
 
             <Text style={styles.description}>
-                {data.descrition}
+                {data.description}
             </Text>
 
             <TouchableOpacity onPress={onRemove}>
